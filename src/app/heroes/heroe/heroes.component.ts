@@ -10,9 +10,14 @@ export class HeroeComponent {
 
     nombre: string = 'Ironman';
     edad: number = 45;
+    nada:string=''
 
     get nombreCapitalizado():string{
         return this.nombre.toUpperCase();
+    }
+
+    demostracion(a:string){
+        this.nada = a;
     }
 
     obtenerNombre():string{
